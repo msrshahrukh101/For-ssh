@@ -13,55 +13,55 @@ func main() {
         // args := append([]string{"voyagercache"}, city_ids.CityIds...)
 		
 		go func() {
-			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[:2000])
+			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[:2000]...)
 			stdoutStderr, _ := cmd.CombinedOutput()
 			fmt.Printf("%s\n", stdoutStderr)
 		}()
 
 		go func() {
-			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[2000:4000])
+			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[2000:4000]...)
 			stdoutStderr, _ := cmd.CombinedOutput()
 			fmt.Printf("%s\n", stdoutStderr)
 		}()
 
 		go func() {
-			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[4000:6000])
+			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[4000:6000]...)
 			stdoutStderr, _ := cmd.CombinedOutput()
 			fmt.Printf("%s\n", stdoutStderr)
 		}()
 
 		go func() {
-			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[6000:8000])
+			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[6000:8000]...)
 			stdoutStderr, _ := cmd.CombinedOutput()
 			fmt.Printf("%s\n", stdoutStderr)
 		}()
 		
 		go func() {
-			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[8000:10000])
+			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[8000:10000]...)
 			stdoutStderr, _ := cmd.CombinedOutput()
 			fmt.Printf("%s\n", stdoutStderr)
 		}()
 
 		go func() {
-			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[10000:12000])
+			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[10000:12000]...)
 			stdoutStderr, _ := cmd.CombinedOutput()
 			fmt.Printf("%s\n", stdoutStderr)
 		}()
 
 		go func() {
-			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[12000:14000])
+			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[12000:14000]...)
 			stdoutStderr, _ := cmd.CombinedOutput()
 			fmt.Printf("%s\n", stdoutStderr)
 		}()
 
 		go func() {
-			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[14000:16000])
+			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[14000:16000]...)
 			stdoutStderr, _ := cmd.CombinedOutput()
 			fmt.Printf("%s\n", stdoutStderr)
 		}()
 
 		go func() {
-			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[16000:])
+			cmd = exec.Command(`./bheem`, `voyagercache`, `--flag=true`, international_cities[16000:]...)
 			stdoutStderr, _ := cmd.CombinedOutput()
 			fmt.Printf("%s\n", stdoutStderr)
 		}()
